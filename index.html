@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kartlı Hafıza Oyunu</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css" />
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Kartlı Hafıza Oyunu</h1>
+        </header>
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+        	<span class="moves">0</span> Hamle
+            <span class="timer"><span class="mins">Süre: 00</span> : <span class="secs">00</span>
+                <a href="javascript:void(0);" class="restart">
+            		<i class="fa fa-repeat"></i>
+            	</a>
+            </span>
+        </section>
+        <ul class="deck">
+            <div class="info-box">
+                <h3>Tebrikler! Oyunu Tamamladınız.</h3>
+                <div class="info-stats">
+                    <div class="title">
+                        <div class="info">#</div>
+                        <div class="info">Hamle </div>
+                        <div class="info">Süre</div>
+                        <div class="info">Yıldızlar</div>
+                        <div class="info">Ortalama<sup>*</sup></div>
+                    </div>
+                    <div id="results"></div>
+                </div><br><br>
+                <a id="restart-btn" class="restart" href="javascript:void(0);">Tekrar Oyna...</a>
+            </div>
+        </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
